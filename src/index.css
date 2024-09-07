@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  clear: right;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transform: scale(1);
+}
+
+.focus\:ring-cyan-300:focus {
+  --tw-ring-opacity: 0 !important;
+}
+
+/* .hidden-scrollbar::-webkit-scrollbar {
+  display: hidden; 
+} */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 14px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #0e7490;
+  border-radius: 14px;
+  /* Tambahkan jika ingin memberi jarak di bagian bawah */
+}
+
+.fixed-bottom {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 50 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.custom-timeline-point {
+  background-color: red; /* Ganti dengan warna yang Anda inginkan */
+  border-radius: 9999px; /* Membuat titiknya bulat */
+  color: white; /* Warna ikon di dalam titik */
+  padding: 0.5rem; /* Ruang di sekitar ikon */
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: red;
+  transform-origin: 0% 0%;
+}
+
+/* .hidden-scrollbar {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+} */
+
+@media (min-width: 1024px) {
+  .group-custom-cursor .group-hover-custom-cursor {
+    opacity: 1;
+  }
+}
