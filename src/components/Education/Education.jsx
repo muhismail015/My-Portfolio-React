@@ -1,7 +1,6 @@
-import React from "react";
 import NavTitle from "../Navigation/NavTitle";
 
-import { Button, Timeline } from "flowbite-react";
+import { Timeline } from "flowbite-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import educationData from "../../utils/constant/educationData";
 

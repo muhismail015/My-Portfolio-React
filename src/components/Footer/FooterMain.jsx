@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const FooterMain = () => {
@@ -44,7 +43,7 @@ const FooterMain = () => {
         >
           Flowbite
         </Link>
-        . Backend integrated soon...
+        . Backend integration soon...
       </p>
     </footer>
   );

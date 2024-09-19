@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "SuikaBot",
     category: "Web/Bot",
-    desc: "WhatsApp Bot with many usefull feature and integrated with AI using Google Gemini AI and Google Imagen. This bot is made with Node.js and WhatsApp-Web.js library. Website is made with React.js and Express.js for manage data, API and information.",
+    desc: "a WhatsApp Bot with many usefull feature and integrated with AI using Google Gemini AI and Google Imagen. This bot is made with Node.js and WhatsApp-Web.js library. Website is made with React.js and Express.js for manage data, API and information.",
     img: SuikaImg,
     link: "https://suika.pw",
     additionals: [
@@ -50,7 +50,7 @@ const projectsData = [
     id: 3,
     title: "Bengkel Aulia Motor Management",
     category: "Web",
-    desc: "Website to manage inventory and financial data for Aulia Motor Workshop",
+    desc: "BAM Management is a web to manage inventory and financial data for Aulia Motor Workshop",
     img: BamImg,
     link: "https://github.com/muhismail015/Bengkel-Aulia-Motor_Inventory-Management",
     additionals: [
@@ -72,7 +72,7 @@ const projectsData = [
     id: 4,
     title: "SiCloud - Cloud Online Course",
     category: "Web",
-    desc: "Web application to manage online course, with main feature to see free course about AWS. This project is made with Laravel",
+    desc: "SiCloud is a web to manage online course, with main feature to see free course about AWS. This project is made with Laravel",
     img: SiCloudImg,
     link: "https://github.com/muhismail015/SiCloud-Cloud_Online_Course",
     additionals: [
@@ -86,7 +86,7 @@ const projectsData = [
     id: 5,
     title: "Movie App",
     category: "Web",
-    desc: "Movie App is a web application to see and watch movie fom TMdb API, this project is made with React.js",
+    desc: "Movie App is a web to see recomendation movie. Data using TMdb API, this project is made with React.js",
     img: MovieAppImg,
     link: "https://mytask-frontend-sabtu.vercel.app/",
     additionals: [

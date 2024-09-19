@@ -1,4 +1,3 @@
-import React from "react";
 import NavTitle from "../Navigation/NavTitle";
 import { Link } from "react-router-dom";
 
@@ -8,7 +7,7 @@ const AboutMe = () => {
       <NavTitle title={"About-Me"} />
       <div className="font-normal text-md">
         <p className="mb-4">
-          If there is free time, I am now developing a whatsapp bot called
+          {"If I have free time, I'm now developing a WhatsApp bot called"}
           <Link
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             to={"https://suika.pw"}
@@ -17,7 +16,7 @@ const AboutMe = () => {
             {" "}
             SuikaBot
           </Link>{" "}
-          with 3 of my friends, which now has the name{" "}
+          with three of my friends. It now has the name{" "}
           <Link
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             to={"https://github.com/orgs/SuikaBot/teams/suikadev"}
@@ -25,17 +24,16 @@ const AboutMe = () => {
           >
             SuikaDev
           </Link>
-          , with various planning and features designed to make people's work
-          easier or for fun, as well as exploring the latest technology with.
+          {`. The bot has various features and plans designed to make people's work
+          easier or for fun, as well as to exploring the latest technology with.`}
         </p>
         <p className="mb-4">
-          Despite being a full-stack web developer, my focus is more on the
-          back-end because I am not confident in my design skills (if there is
-          no reference :p).
+          {` Despite being a full-stack web developer, my focus is more on the
+          back-end because I'm not confident in my design skills (if there is no reference :p).`}
         </p>
         <p className="mb-4">
-          My free time is used for refreshing by playing game and watching anime
-          , its a hard choice's beetween to playing a game or watching anime...
+          {` My free time is used for refreshing by playing games and watching anime.
+          It's a hard choice between playing a game and watching anime...`}
         </p>
       </div>
 

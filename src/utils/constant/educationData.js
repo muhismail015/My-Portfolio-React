@@ -1,4 +1,3 @@
-import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const educationData = [
   {
@@ -6,8 +5,8 @@ const educationData = [
     name: "Sekolah Tinggi Teknologi Terpadu Nurul Fikri",
     startDate: "2020",
     endDate: "2024",
-    major: "Information Technology",
-    gpa: "3.86",
+    major: "Information Engineering",
+    gpa: "3.86 / 4.00",
     icon: "fa-solid fa-user-graduate",
   },
   {

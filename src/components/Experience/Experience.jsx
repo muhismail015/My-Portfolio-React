@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import { useState } from "react";
 import NavTitle from "../Navigation/NavTitle";
 import experienceData from "../../utils/constant/experienceData";
 import { Link } from "react-router-dom";
@@ -47,7 +47,7 @@ const Experience = () => {
                               clicked === data.id ? "text-teal-300" : ""
                             }
                           >
-                            {data.title} -
+                            {data.title} |
                             <span className="ml-1 inline-block">
                               {data.company}
                               {data.showcase != null && (

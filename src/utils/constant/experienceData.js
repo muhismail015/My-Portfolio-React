@@ -3,13 +3,13 @@ const experienceData = [
     id: 1,
     title: "Full-Stack Web Developer",
     exTitle_2: null,
-    company: "Infinite Learning",
-    location: null,
+    company: "Kampus Merdeka",
+    location: "Infinite Learning (PT. Kinema Systrans Multimedia)",
     showcase: "https://www.linkedin.com/company/infinite-learning-indonesia",
     startDate: "Agu 2023",
     endDate: "Dec 2023",
     description:
-      "Designed websites in Figma, implemented them using ReactJS with Vite, and developed databases and APIs with NodeJS and Express.js. Managed deployment through Google Cloud Platform’s Virtual Machines. Infinite Learning or PT. Kinema Systrans Multimedia, this is a program of Independent Study from Kampus Merdeka",
+      "This is Independent Study program from Kampus Merdeka. Design websites in Figma, implement using ReactJS + Vite and develope databases and APIs with NodeJS and Express.js. Manage deployment through Google Cloud Platform’s Virtual Machines.",
     links: [
       {
         show: true,
@@ -35,20 +35,20 @@ const experienceData = [
       "PrelineUI",
       "Figma",
       "Postman",
-      "VM Hosted",
+      "VM Hosting",
     ],
   },
   {
     id: 2,
     title: "Full-Stack Web Developer",
     exTitle_2: null,
-    company: "NF Computer",
-    location: null,
+    company: "Kampus Merdeka",
+    location: "NF Computer (PT. Nurul Fikri Cipta Inovasi)",
     showcase: "https://www.linkedin.com/company/pt-nurul-fikri-cipta-inovasi",
     startDate: "Aug 2022",
     endDate: "Dec 2022",
     description:
-      "Collaborated on projects using GitHub, created website layouts, implemented designs, and built APIs with PHP Laravel. Deployed and hosted finished websites on Webmin. NF Computer or PT. Nurul Fikri Cipta Inovasi, this is a program of Independent Study from Kampus Merdeka.",
+      "This is Independent Study program from Kampus Merdeka. Collaborate on projects using GitHub, create website layouts, implement designs, and built APIs with PHP Laravel. Deploy and hosting websites on Webmin.",
     links: [
       {
         show: true,
@@ -78,14 +78,14 @@ const experienceData = [
   {
     id: 3,
     title: "Full-Stack Web Developer",
-    exTitle_2: null,
-    company: "Pemira STT-NF",
-    location: null,
+    exTitle_2: "Volunteer",
+    company: "PEMIRA",
+    location: "Pemira STTNF",
     showcase: null,
     startDate: "Jan 2022",
     endDate: "Mei 2022",
     description:
-      "Volunteered to collaborate on projects via GitHub and designed/administered website pages for an admin dashboard using Laravel.",
+      "Designed/administered website pages for an admin dashboard using Laravel, Collaborate on projects via GitHub, as a volunteer for the STTNF Student.",
     links: [
       {
         show: false,

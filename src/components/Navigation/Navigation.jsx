@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
 const Navigation = () => {
@@ -48,7 +48,7 @@ const Navigation = () => {
 
   return (
     <nav className="nav hidden lg:block">
-      <ul className="lg:mt-16 w-max uppercase">
+      <ul className="lg:mt-6 lg:mb-6 w-max uppercase">
         {navItems.map((item, index) => (
           <li key={index}>
             <Link

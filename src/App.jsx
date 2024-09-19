@@ -7,9 +7,6 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import NotFound from "./pages/NotFound";
 
-import React, { MouseEvent } from "react";
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-
 const App = () => {
   return (
     <>

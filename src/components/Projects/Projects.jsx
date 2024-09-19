@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import NavTitle from "../Navigation/NavTitle";
 import { Link } from "react-router-dom";
 import Zoom from "react-medium-image-zoom";
