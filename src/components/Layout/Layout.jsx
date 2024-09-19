@@ -1,5 +1,4 @@
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import React from "react";
 
 const Layout = ({ leftContent, rightContent }) => {
   let mouseX = useMotionValue(0);
