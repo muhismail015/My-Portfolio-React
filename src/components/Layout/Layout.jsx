@@ -18,7 +18,7 @@ const Layout = ({ leftContent, rightContent }) => {
 
   return (
     <>
-      <div className="fixed inset-0 z-30 transition duration-300 lg:absolute text-md">
+      <div className="inset-0 z-30 transition duration-300 absolute text-md">
         <div className="relative group-custom-cursor" onMouseMove={handleMouse}>
           <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
             {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/2"> */}
@@ -29,10 +29,12 @@ const Layout = ({ leftContent, rightContent }) => {
                   background: useMotionTemplate`radial-gradient(2000px circle at ${mouseX}px ${mouseY}px, rgb(14 165 233 / 0.15), transparent 25%)`,
                 }}
               />
-              <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+              <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-12 2xl:py-24 ">
                 {leftContent}
               </div>
-              <div className="pt-24 lg:w-1/2 lg:py-24 ">{rightContent}</div>
+              <div className="pt-24 lg:w-1/2 lg:py-12 2xl:py-24">
+                {rightContent}
+              </div>
             </div>
             {/* </div> */}
           </div>
