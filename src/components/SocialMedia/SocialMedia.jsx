@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { Tooltip } from "flowbite-react";
 
-const SocialMedia = () => {
+const SocialMedia = ({ className, top = "mt-10" }) => {
   const socialMediaLinks = [
     {
       icon: "fa-brands fa-github",
@@ -37,14 +38,16 @@ const SocialMedia = () => {
   ];
 
   return (
-    <div className="lg:mt-auto mt-10 flex">
+    <div className={`lg:mt-auto ${top} flex`}>
       <ul className="flex items-center text-3xl">
         {socialMediaLinks.map((link, index) => (
-          <li key={index} className="mr-5 transition hover:text-slate-300">
+          <li key={index} className="transition hover:text-slate-300">
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-              <Link to={link.url} target="_blank" title={link.title}>
-                <FontAwesomeIcon icon={link.icon} />
-              </Link>
+              <Tooltip className="text-xs" content={link.title} trigger="hover">
+                <Link to={link.url} target="_blank" title={link.title}>
+                  <FontAwesomeIcon className={className} icon={link.icon} />
+                </Link>
+              </Tooltip>
             </motion.div>
           </li>
         ))}
