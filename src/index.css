@@ -15,7 +15,6 @@ body {
     sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  transform: scale(1);
 }
 
 .focus\:ring-cyan-300:focus {
@@ -46,19 +45,6 @@ body {
   z-index: 50 !important;
   width: 100% !important;
   max-width: 100% !important;
-}
-
-.custom-timeline-point {
-  background-color: red; /* Ganti dengan warna yang Anda inginkan */
-  border-radius: 9999px; /* Membuat titiknya bulat */
-  color: white; /* Warna ikon di dalam titik */
-  padding: 0.5rem; /* Ruang di sekitar ikon */
-}
-
-.progress-bar {
-  height: 10px;
-  background-color: red;
-  transform-origin: 0% 0%;
 }
 
 /* .hidden-scrollbar {

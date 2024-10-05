@@ -4,21 +4,10 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import Experience from "../components/Experience/Experience";
 import Education from "../components/Education/Education";
 import Projects from "../components/Projects/Projects";
-import { useMotionValue } from "framer-motion";
 import FooterMain from "../components/Footer/FooterMain";
+import Skills from "../components/Skills/Skills";
 
 const Portfolio = () => {
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  function handleMouseMove(event) {
-    const { currentTarget, clientX, clientY } = event;
-    const { left, top } = currentTarget.getBoundingClientRect();
-
-    mouseX.set(clientX - left);
-    mouseY.set(clientY - top);
-  }
-
   return (
     <>
       <Layout
@@ -32,6 +21,7 @@ const Portfolio = () => {
             <AboutMe />
             <Experience />
             <Education />
+            <Skills />
             <Projects />
             <FooterMain />
           </>
