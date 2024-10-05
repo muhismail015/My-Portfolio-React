@@ -18,13 +18,15 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 const Article = ({ project, color, icon }) => {
   const [currentIndex, setCurrentIndex] = useState(-1); // -1 mean not opened
 
-  const images = project.img[0].sort(
-    (a, b) =>
-      parseInt(a.match(/\((\d+)\)/)[1]) - parseInt(b.match(/\((\d+)\)/)[1])
-  );
+  const images = project.img[0].sort((a, b) => {
+    const aNum = parseInt(a.match(/(\d+)\./)?.[1] || 0, 10);
+    const bNum = parseInt(b.match(/(\d+)\./)?.[1] || 0, 10);
+
+    return aNum - bNum;
+  });
 
   const openLightbox = (index) => {
-    setCurrentIndex(index); // Set index ke gambar yang diklik
+    setCurrentIndex(index);
   };
 
   const hideIndicator = project.img[0].length > 1 && project.img[0].length <= 6;
@@ -45,19 +47,13 @@ const Article = ({ project, color, icon }) => {
           slideInterval={2000}
           indicators={hideIndicator}
         >
-          {project.img[0]
-            .sort(
-              (a, b) =>
-                parseInt(a.match(/\((\d+)\)/)[1]) -
-                parseInt(b.match(/\((\d+)\)/)[1])
-            )
-            .map((img, index) => (
-              <Fragment key={index}>
-                <ZoomSingle>
-                  <img key={index} src={img} alt={project.title} />
-                </ZoomSingle>
-              </Fragment>
-            ))}
+          {images.map((img, index) => (
+            <Fragment key={index}>
+              <ZoomSingle>
+                <img key={index} src={img} alt={project.title} />
+              </ZoomSingle>
+            </Fragment>
+          ))}
         </Carousel>
 
         <div className="my-5">
