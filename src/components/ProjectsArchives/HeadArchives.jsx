@@ -12,7 +12,7 @@ const HeadArchives = ({
   const arrLayout = ["Rectangle", "Grid"];
 
   return (
-    <div className="mt-10 max-w-screen-xl px-4 mx-auto lg:px-6 w-full">
+    <div className="mt-10 max-w-screen-xl mx-auto w-full">
       <div className="relative bg-gradient-to-br from-cyan-600 to-cyan-800 shadow-md dark:bg-gray-800 rounded-lg">
         <div className="flex flex-col items-center justify-between p-3 space-y-3 md:flex-row md:space-y-0 md:space-x-4">
           <div className="w-full md:w-1/2">

@@ -11,7 +11,7 @@ const ArticleSide = ({ project }) => {
   return (
     <div className="pt-10 sm:pt-24 basis-2/6">
       <aside className="sticky top-8">
-        <div className="mb-2 bg-gray-800 p-5 rounded-lg">
+        <div className="mb-2 bg-slate-100 bg-opacity-10 p-5 rounded-lg">
           <h3 className="text-lg font-semibold text-slate-50">More Info</h3>
           <p className="my-2">
             Provide details about the project, such as a preview or code.
@@ -51,7 +51,7 @@ const ArticleSide = ({ project }) => {
             </motion.div>
           </div>
         </div>
-        <div className="my-4 bg-gray-800 p-5 rounded-lg">
+        <div className="my-4 bg-slate-100 bg-opacity-10 p-5 rounded-lg">
           <h3 className="text-lg font-semibold text-slate-50 mb-3">
             Contact Me:
           </h3>
@@ -71,7 +71,7 @@ const ArticleSide = ({ project }) => {
             </Link>
           </motion.div>
         </div>
-        <div className=" p-2 rounded-lg bg-gray-800 flex justify-center items-center">
+        <div className=" p-2 rounded-lg bg-slate-100 bg-opacity-10 flex justify-center items-center">
           <SocialMedia className={"mx-2"} top="mt-auto" />
         </div>
       </aside>

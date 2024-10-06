@@ -2,8 +2,36 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "flowbite-react";
 import { Link } from "react-router-dom";
 import Zoom from "react-medium-image-zoom";
+import { BoxBigLoading } from "../Loadings/Loadings";
+import { useEffect, useState } from "react";
 
 const RectangleProjects = ({ filteredData }) => {
+  const [allImagesLoaded, setAllImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    const loadImages = async () => {
+      const loadImage = (src) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = src;
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      };
+
+      try {
+        await Promise.all(
+          filteredData.map((project) => loadImage(project.img[0][0]))
+        );
+        setAllImagesLoaded(true);
+      } catch (error) {
+        console.error("Failed to load one or more images:", error);
+      }
+    };
+
+    loadImages();
+  }, [filteredData]);
+
   const genap = (index) => {
     return index % 2 === 0;
   };
@@ -43,14 +71,21 @@ const RectangleProjects = ({ filteredData }) => {
         return (
           <div
             key={index}
-            className={`transition gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 sm:py-16 lg:px-6 md:grid md:grid-cols-2 ${
+            className={`bg-slate-100 bg-opacity-10 rounded-lg shadow-2xl my-5 transition gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 sm:py-10 lg:px-6 md:grid md:grid-cols-2 ${
               genap(index) ? "md:grid-cols-2 md:flex-row-reverse" : ""
             }`}
           >
             <div className={`w-full ${!genap(index) ? "block md:hidden" : ""}`}>
+              {!allImagesLoaded && (
+                <div className="cursor-pointer border-2 sm:border-4 border-transparent bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-xl shadow-md">
+                  <BoxBigLoading />
+                </div>
+              )}
               <Zoom>
                 <img
-                  className="border-2 sm:border-4 border-transparent bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-xl shadow-md"
+                  className={`${
+                    allImagesLoaded ? "block" : "hidden"
+                  } border-2 sm:border-4 border-transparent bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-xl shadow-md`}
                   src={project.img[0][0]}
                   alt={`preview ${project.title}`}
                 />
@@ -83,7 +118,7 @@ const RectangleProjects = ({ filteredData }) => {
                   <FontAwesomeIcon icon={icon} /> {project.type}
                 </span>
               </div>
-              <p className="mb-6 font-light text-slate-400 md:text-lg">
+              <p className="line-clamp-3 mb-6 font-light text-slate-400 md:text-lg">
                 {project.desc}
               </p>
               <div
@@ -120,9 +155,16 @@ const RectangleProjects = ({ filteredData }) => {
                 genap(index) ? "md:hidden" : "md:block"
               }`}
             >
+              {!allImagesLoaded && (
+                <div className="cursor-pointer border-2 sm:border-4 border-transparent bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-xl shadow-md">
+                  <BoxBigLoading />
+                </div>
+              )}
               <Zoom>
                 <img
-                  className="border-2 sm:border-4 border-transparent bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-xl shadow-md"
+                  className={`${
+                    allImagesLoaded ? "block" : "hidden"
+                  } border-2 sm:border-4 border-transparent bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-xl shadow-md`}
                   src={project.img[0][0]}
                   alt={`project ${project.title}`}
                 />

@@ -2,16 +2,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "flowbite-react";
 import Zoom from "react-medium-image-zoom";
 import { Link } from "react-router-dom";
+import { BoxBigLoading } from "../Loadings/Loadings";
 
-const Card = ({ project, color, icon }) => {
+const Card = ({ project, color, icon, allImagesLoaded }) => {
   return (
-    <div className="rounded-lg p-2 shadow-xl">
+    <div className="rounded-lg p-4 shadow-2xl bg-slate-100 bg-opacity-10">
       <div className="h-auto w-full">
+        {!allImagesLoaded && (
+          <div className="cursor-pointer rounded-lg shadow-md mx-auto h-full">
+            <BoxBigLoading />
+          </div>
+        )}
         <Zoom>
           <img
-            className="rounded-lg shadow-md mx-auto h-full"
+            className={`${
+              allImagesLoaded ? "block" : "hidden"
+            } rounded-lg shadow-md mx-auto h-full`}
             src={project.img[0][0]}
-            alt=""
+            alt={`preview ${project.title}`}
           />
         </Zoom>
       </div>

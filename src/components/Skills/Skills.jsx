@@ -1,6 +1,7 @@
 import NavTitle from "../Navigation/NavTitle";
 import skillIcons from "../../utils/constant/skillIcons";
 import { Tooltip } from "flowbite-react";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -13,14 +14,18 @@ const Skills = () => {
           </h3>
           <div className="flex flex-wrap gap-4 mt-2">
             {skill.icons.map((icon, index) => (
-              <div
+              <motion.div
+                className="z-10"
                 key={index}
-                className="z-10 flex items-center gap-2 bg-slate-200 rounded-lg p-2"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1 }}
               >
-                <Tooltip content={icon.name} position="top">
-                  <img src={icon.icon} alt={icon.name} className="w-8 h-8" />
-                </Tooltip>
-              </div>
+                <div className="flex items-center gap-2 bg-slate-200 rounded-lg p-2">
+                  <Tooltip content={icon.name} position="top">
+                    <img src={icon.icon} alt={icon.name} className="w-8 h-8" />
+                  </Tooltip>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
