@@ -1,21 +1,21 @@
-import html from "../../assets/icons/html.svg";
-import css from "../../assets/icons/css.svg";
-import bootstrap from "../../assets/icons/bootstrap.svg";
-import express from "../../assets/icons/express.svg";
-import figma from "../../assets/icons/figma.svg";
-import flowbite from "../../assets/icons/flowbite.svg";
-import github from "../../assets/icons/github.svg";
-import js from "../../assets/icons/js.svg";
-import laravel from "../../assets/icons/laravel.svg";
-import mysql from "../../assets/icons/mysql.svg";
-import nodejs from "../../assets/icons/nodejs.svg";
-import php from "../../assets/icons/php.svg";
-import postman from "../../assets/icons/postman.svg";
-import preline from "../../assets/icons/preline.svg";
-import python from "../../assets/icons/python.svg";
-import reactjs from "../../assets/icons/reactjs.svg";
-import tailwind from "../../assets/icons/tailwind.svg";
-import vscode from "../../assets/icons/vscode.svg";
+import htmlIcon from "../../assets/Icons/icon-html.svg";
+import cssIcon from "../../assets/icons/icon-css.svg";
+import bootstrapIcon from "../../assets/icons/icon-bootstrap.svg";
+import expressIcon from "../../assets/icons/icon-express.svg";
+import figmaIcon from "../../assets/icons/icon-figma.svg";
+import flowbiteIcon from "../../assets/icons/icon-flowbite.svg";
+import githubIcon from "../../assets/icons/icon-github.svg";
+import jsIcon from "../../assets/icons/icon-js.svg";
+import laravelIcon from "../../assets/icons/icon-laravel.svg";
+import mysqlIcon from "../../assets/icons/icon-mysql.svg";
+import nodejsIcon from "../../assets/icons/icon-nodejs.svg";
+import phpIcon from "../../assets/icons/icon-php.svg";
+import postmanIcon from "../../assets/icons/icon-postman.svg";
+import prelineIcon from "../../assets/icons/icon-preline.svg";
+import pythonIcon from "../../assets/icons/icon-python.svg";
+import reactjsIcon from "../../assets/icons/icon-reactjs.svg";
+import tailwindIcon from "../../assets/icons/icon-tailwind.svg";
+import vscodeIcon from "../../assets/icons/icon-vscode.svg";
 
 const skillIcons = [
   {
@@ -23,27 +23,27 @@ const skillIcons = [
     icons: [
       {
         name: "HTML",
-        icon: html,
+        icon: htmlIcon,
       },
       {
         name: "CSS",
-        icon: css,
+        icon: cssIcon,
       },
       {
         name: "JavaScript",
-        icon: js,
+        icon: jsIcon,
       },
       {
         name: "PHP",
-        icon: php,
+        icon: phpIcon,
       },
       {
         name: "MySQL",
-        icon: mysql,
+        icon: mysqlIcon,
       },
       {
         name: "Python",
-        icon: python,
+        icon: pythonIcon,
       },
     ],
   },
@@ -52,35 +52,35 @@ const skillIcons = [
     icons: [
       {
         name: "React.js",
-        icon: reactjs,
+        icon: reactjsIcon,
       },
       {
         name: "Node.js",
-        icon: nodejs,
+        icon: nodejsIcon,
       },
       {
         name: "Express.js",
-        icon: express,
+        icon: expressIcon,
       },
       {
         name: "Laravel",
-        icon: laravel,
+        icon: laravelIcon,
       },
       {
         name: "Bootstrap",
-        icon: bootstrap,
+        icon: bootstrapIcon,
       },
       {
         name: "TailwindCSS",
-        icon: tailwind,
+        icon: tailwindIcon,
       },
       {
         name: "Flowbite",
-        icon: flowbite,
+        icon: flowbiteIcon,
       },
       {
         name: "Preline",
-        icon: preline,
+        icon: prelineIcon,
       },
     ],
   },
@@ -89,19 +89,19 @@ const skillIcons = [
     icons: [
       {
         name: "Figma",
-        icon: figma,
+        icon: figmaIcon,
       },
       {
         name: "VSCode",
-        icon: vscode,
+        icon: vscodeIcon,
       },
       {
         name: "Postman",
-        icon: postman,
+        icon: postmanIcon,
       },
       {
         name: "Github",
-        icon: github,
+        icon: githubIcon,
       },
     ],
   },

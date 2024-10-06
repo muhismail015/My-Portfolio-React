@@ -52,7 +52,12 @@ const ProjectDetail = () => {
     <>
       <Single>
         <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 dark:bg-gray-900 antialiased">
-          <GoTo text={"Previous"} navigation={"prev"} back={true} />
+          <GoTo
+            text={"Back to Projects"}
+            navigation={"prev"}
+            back={false}
+            to={"/projects"}
+          />
           <div className="flex flex-col md:flex-row mt-5 px-1 md:px-4 mx-auto max-w-screen-xl md:space-x-3">
             <Article project={project} color={color} icon={icon} />
             <ArticleSide project={project} />
