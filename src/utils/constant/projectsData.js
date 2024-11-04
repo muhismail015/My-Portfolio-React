@@ -1,8 +1,53 @@
-import { suikaWeb, suikaBot, waIntip, bamManagement, happyCat, covidId, movieApp, siCloud, siInKa, portfolioPhp } from "./projectsImg";
+import {
+  fekkSaldo,
+  suikaWeb,
+  suikaBot,
+  waIntip,
+  bamManagement,
+  happyCat,
+  covidId,
+  movieApp,
+  siCloud,
+  siInKa,
+  portfolioPhp,
+} from "./projectsImg";
 
 let id = 1;
 
 const projectsData = [
+  {
+    id: id++,
+    title: "Fake Saldo 2024",
+    category: "Website",
+    type: "Frontend & Backend",
+    desc: `Website about image manipulation with Canvas Node.js, "for those who love borrowing my money but often don't pay them back."`,
+    img: [fekkSaldo],
+    additionals: [
+      {
+        show: true,
+      },
+      {
+        text: "Github",
+        link: false,
+        icon: "fa-brands fa-github",
+      },
+      {
+        text: "Demo",
+        link: "https://fekk-saldo.vercel.app/",
+        icon: "fa-solid fa-globe",
+      },
+    ],
+    tag: [
+      "React.js Vite",
+      "Redux Toolkit",
+      "TailwindCSS",
+      "Flowbite",
+      "Flowbite-React",
+      "Node.js",
+      "Canvas",
+      "Express.js",
+    ],
+  },
   {
     id: id++,
     title: "SuikaWeb",
@@ -23,7 +68,7 @@ const projectsData = [
         text: "Demo",
         link: "https://suika.pw/",
         icon: "fa-solid fa-globe",
-      }
+      },
     ],
     tag: [
       "React.js Vite",
@@ -57,7 +102,7 @@ const projectsData = [
         text: "Demo",
         link: "https://api.whatsapp.com/send/?phone=6285179910233&text=p&type=phone_number&app_absent=0",
         icon: "fa-brands fa-whatsapp",
-      }
+      },
     ],
     tag: [
       "Node.js",
@@ -91,7 +136,7 @@ const projectsData = [
         text: "Demo",
         link: false,
         icon: "fa-brands fa-whatsapp",
-      }
+      },
     ],
     tag: ["WhatsApp-Web.js", "Node.js", "FFMPEG"],
   },
@@ -115,7 +160,7 @@ const projectsData = [
         text: "Demo",
         link: false,
         icon: "fa-solid fa-globe",
-      }
+      },
     ],
     tag: [
       "React.js Vite",
@@ -147,15 +192,9 @@ const projectsData = [
         text: "Demo",
         link: "https://happy-cats-macro-project.vercel.app/",
         icon: "fa-solid fa-globe",
-      }
+      },
     ],
-    tag: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "Vercel",
-    ],
+    tag: ["HTML", "CSS", "JavaScript", "Bootstrap", "Vercel"],
   },
   {
     id: id++,
@@ -177,7 +216,7 @@ const projectsData = [
         text: "Demo",
         link: "https://react-covid-pi.vercel.app/",
         icon: "fa-solid fa-globe",
-      }
+      },
     ],
     tag: ["React.js", "Consume API", "Styled Components", "Vercel"],
   },
@@ -201,7 +240,7 @@ const projectsData = [
         text: "Demo",
         link: "https://mytask-frontend-sabtu.vercel.app/",
         icon: "fa-solid fa-globe",
-      }
+      },
     ],
     tag: ["React.js", "TMdb API", "Styled Components", "Vercel"],
   },
@@ -225,9 +264,19 @@ const projectsData = [
         text: "Demo",
         link: false,
         icon: "fa-solid fa-globe",
-      }
+      },
     ],
-    tag: ["Laravel", "PHP", "Bootstrap", "MySQL", "Sweetalert2", "Laravel-DOM-PDF", "Sanctum", "Livewire", "MVC"],
+    tag: [
+      "Laravel",
+      "PHP",
+      "Bootstrap",
+      "MySQL",
+      "Sweetalert2",
+      "Laravel-DOM-PDF",
+      "Sanctum",
+      "Livewire",
+      "MVC",
+    ],
   },
   {
     id: id++,
@@ -249,9 +298,17 @@ const projectsData = [
         text: "Demo",
         link: false,
         icon: "fa-solid fa-globe",
-      }
+      },
     ],
-    tag: ["HTML", "CSS", "PHP", "Bootstrap", "MySQL", "Template/Layouting", "MVC"],
+    tag: [
+      "HTML",
+      "CSS",
+      "PHP",
+      "Bootstrap",
+      "MySQL",
+      "Template/Layouting",
+      "MVC",
+    ],
   },
   {
     id: id++,
@@ -273,7 +330,7 @@ const projectsData = [
         text: "Demo",
         link: false,
         icon: "fa-solid fa-globe",
-      }
+      },
     ],
     tag: ["HTML", "CSS", "PHP", "Bootstrap", "Template/Layouting"],
   },
