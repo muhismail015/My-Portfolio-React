@@ -20,7 +20,7 @@ const projectsData = [
     title: "Fake Saldo 2024",
     category: "Website",
     type: "Frontend & Backend",
-    desc: `Website about image manipulation with Canvas Node.js, "for those who love borrowing my money but often don't pay them back."`,
+    desc: `Website about image manipulation with Canvas Node.js, with integration payment gateway from Midtrans for Donation.`,
     img: [fekkSaldo],
     additionals: [
       {
@@ -46,6 +46,9 @@ const projectsData = [
       "Node.js",
       "Canvas",
       "Express.js",
+      "Payment Gateway",
+      "Donation",
+      "Midtrans",
     ],
   },
   {
