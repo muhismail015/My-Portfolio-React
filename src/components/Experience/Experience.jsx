@@ -47,8 +47,12 @@ const Experience = () => {
                               clicked === data.id ? "text-teal-300" : ""
                             }
                           >
-                            {data.title} |
-                            <span className="ml-1 inline-block">
+                            {data.title} {data.company === null ? "" : "|"}{" "}
+                            <span
+                              className={`${
+                                data.company != null ? "ml-1" : "ml-0"
+                              } inline-block`}
+                            >
                               {data.company}
                               {data.showcase != null && (
                                 <FontAwesomeIcon

@@ -1,6 +1,39 @@
+let id = 1;
+
 const experienceData = [
   {
-    id: 1,
+    id: id++,
+    title: "IT Support & Full-Stack Web Developer",
+    exTitle_2: null,
+    company: null,
+    location: "Yayasan Indah Berbagi",
+    showcase: "https://www.linkedin.com/company/yayasanindahberbagi/",
+    startDate: "Dec 2024",
+    endDate: "Now",
+    description:
+      "Work as IT Support and Full-Stack Web Developer at Yayasan Indah Berbagi. Develop web app, implement design into a code, and maintain websites (soon), and provide IT support for the organization like troubleshooting for network, laptop, PC's.",
+    links: [
+      {
+        show: false,
+      },
+    ],
+    tags: [
+      "React.js Vite",
+      "Express.js",
+      "Node.js",
+      "MySQL",
+      "JavaScript",
+      "TailwindCSS",
+      "Flowbite",
+      "Flowbite React",
+      "Framer Motion",
+      "Postman",
+      "Google Auth",
+      "More...",
+    ],
+  },
+  {
+    id: id++,
     title: "Full-Stack Web Developer",
     exTitle_2: null,
     company: "Kampus Merdeka",
@@ -39,7 +72,7 @@ const experienceData = [
     ],
   },
   {
-    id: 2,
+    id: id++,
     title: "Full-Stack Web Developer",
     exTitle_2: null,
     company: "Kampus Merdeka",
@@ -76,7 +109,7 @@ const experienceData = [
     ],
   },
   {
-    id: 3,
+    id: id++,
     title: "Full-Stack Web Developer",
     exTitle_2: "Volunteer",
     company: "PEMIRA",
